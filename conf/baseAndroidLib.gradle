@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion CompileSdkVersion as int
+    buildToolsVersion BuildToolsVersion
+    enforceUniquePackageName = false
+    defaultConfig {
+        minSdkVersion MinSdkVersion as int
+        targetSdkVersion TargetSdkVersion as int
+    }
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+
+    }
+
+}

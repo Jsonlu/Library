@@ -1,0 +1,21 @@
+allprojects {
+    buildscript {
+        repositories {
+            maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+            maven { url "http://dl.bintray.com/jsonlufly/android" }
+            mavenCentral()
+            jcenter()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:2.3.3'
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+            classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+        }
+    }
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url "http://dl.bintray.com/jsonlufly/android" }
+        mavenCentral()
+        jcenter()
+    }
+}

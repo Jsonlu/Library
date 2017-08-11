@@ -1,0 +1,3 @@
+include ':fastjson-android-network'
+include ':android-networking'
+include ':base-sdk'
